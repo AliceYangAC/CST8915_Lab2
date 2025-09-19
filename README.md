@@ -1,20 +1,5 @@
 # Lab 2
 
-
-GitHub Repository (Submission Repo)
-
-    You must create one GitHub repository for your lab submission (this is separate from the three service repositories).
-    This submission repository must include:
-        A README.md file with:
-            The YouTube demo video link.
-            Your written answers to the Reflection Questions.
-            Links to the three service repositories you created:
-                order-service
-                product-service
-                store-front
-        (Optional) Notes about setup challenges or lessons learned.
-
-
 ## Demo Video
 
 [Youtube Link](https://youtu.be/sF1HTsj0zmQ)
