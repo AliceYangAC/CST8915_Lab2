@@ -20,7 +20,7 @@
 
     Therefore, once an order is made, the created order event is published to the RabbitMQ event bus queue so that any other service subscribed to its topic can be alerted and act on it accordingly without communicating directly between each other. It is all facilitated by RabbitMQ, so that if any communication failure happens, the issue can be isolated to RabbitMQ instead of trying to diagnose complex communication configurations between each service in the distributed system.
 
-2. Why is it important to use environment variables instead of hard-coding configurations in your application?
+2. **Why is it important to use environment variables instead of hard-coding configurations in your application?**
 
     Distinct separation of configurations from the code is important in the 12 pillars design system because configuration can vary across environments, while code should not. Externalized config allows you to be able to deploy the same app to different platforms or cloud providers (ie. Azure, Heroku, Render, etc.) by simply changing the environment variables, thus also supporting CI/CD pipelines. Furthermore, since no configs are in the code, it is much easier to switch environments or update configs as it will not require the entire app to be redeployed to apply those changes. Finally, configs often contain extremely sensitive data like tokens that should never be visible in the code, instead kept isolated from version control through untracked and ignored .env files.
 
@@ -31,7 +31,9 @@
 ## Links
 
 [Order Service repo](https://github.com/AliceYangAC/order-service)
+
 [Product Service repo](https://github.com/AliceYangAC/product-service)
+
 [Store Front repo](https://github.com/AliceYangAC/store-front)
 
 ## Notes
